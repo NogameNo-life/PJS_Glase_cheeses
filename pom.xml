@@ -10,24 +10,14 @@
     <properties>
         <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <version.io.quarkus>3.15.1</version.io.quarkus>
         <version.ai.timefold.solver>1.15.0</version.ai.timefold.solver>
-
         <version.compiler.plugin>3.13.0</version.compiler.plugin>
-        <version.resources.plugin>3.3.1</version.resources.plugin>
+        <version.r.plugin>3.3.1</version.r.plugin>
         <version.surefire.plugin>3.5.1</version.surefire.plugin>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>io.quarkus</groupId>
-                <artifactId>quarkus-bom</artifactId>
-                <version>${version.io.quarkus}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
             <dependency>
                 <groupId>ai.timefold.solver</groupId>
                 <artifactId>timefold-solver-bom</artifactId>
@@ -35,52 +25,32 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.annotation</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>2.11.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-xml</artifactId>
+                <version>2.13.4</version>
+            </dependency>
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>rest-assured</artifactId>
+                <version>3.0.3</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
     <dependencies>
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-resteasy</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-resteasy-jackson</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-smallrye-openapi</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ai.timefold.solver</groupId>
-            <artifactId>timefold-solver-quarkus</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ai.timefold.solver</groupId>
-            <artifactId>timefold-solver-quarkus-jackson</artifactId>
-        </dependency>
-
         <!-- Testing -->
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-junit5</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>ai.timefold.solver</groupId>
             <artifactId>timefold-solver-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.awaitility</groupId>
-            <artifactId>awaitility</artifactId>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
@@ -89,10 +59,6 @@
         </dependency>
 
         <!-- UI -->
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-webjars-locator</artifactId>
-        </dependency>
         <dependency>
             <groupId>ai.timefold.solver</groupId>
             <artifactId>timefold-solver-webui</artifactId>
@@ -129,36 +95,41 @@
             <scope>runtime</scope>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
+            <!-- Maven-compiler-plugin для компиляции Java кода -->
             <plugin>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>${version.resources.plugin}</version>
-            </plugin>
-            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${version.compiler.plugin}</version>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
             </plugin>
+            <!-- Maven-shade-plugin для создания исполняемого JAR файла -->
             <plugin>
-                <groupId>io.quarkus</groupId>
-                <artifactId>quarkus-maven-plugin</artifactId>
-                <version>${version.io.quarkus}</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
                 <executions>
                     <execution>
+                        <phase>package</phase>
                         <goals>
-                            <goal>build</goal>
+                            <goal>shade</goal>
                         </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>com.example.Main</mainClass> <!-- Укажите ваш основной класс с точкой входа -->
+                                </transformer>
+                            </transformers>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${version.surefire.plugin}</version>
-            </plugin>
         </plugins>
     </build>
-
     <profiles>
         <profile>
             <id>native</id>
@@ -190,43 +161,6 @@
                     </plugin>
                 </plugins>
             </build>
-            <properties>
-                <quarkus.package.type>native</quarkus.package.type>
-                <!-- To allow application.properties to avoid using the in-memory database for native builds. -->
-                <quarkus.profile>native</quarkus.profile>
-            </properties>
-        </profile>
-        <profile>
-            <id>container</id>
-            <activation>
-                <property>
-                    <name>container</name>
-                </property>
-            </activation>
-            <dependencies>
-                <dependency>
-                    <groupId>io.quarkus</groupId>
-                    <artifactId>quarkus-container-image-jib</artifactId>
-                </dependency>
-            </dependencies>
-            <properties>
-                <quarkus.container-image.build>true</quarkus.container-image.build>
-            </properties>
-        </profile>
-        <profile>
-            <id>enterprise</id>
-            <activation>
-                <property>
-                    <name>enterprise</name>
-                </property>
-            </activation>
-            <repositories>
-                <repository>
-                    <id>timefold-solver-enterprise</id>
-                    <name>Timefold Solver Enterprise Edition</name>
-                    <url>https://timefold.jfrog.io/artifactory/releases/</url>
-                </repository>
-            </repositories>
             <dependencyManagement>
                 <dependencies>
                     <dependency>
@@ -238,15 +172,6 @@
                     </dependency>
                 </dependencies>
             </dependencyManagement>
-            <dependencies>
-                <dependency>
-                    <groupId>ai.timefold.solver.enterprise</groupId>
-                    <artifactId>timefold-solver-enterprise-quarkus</artifactId>
-                </dependency>
-            </dependencies>
-            <properties>
-                <quarkus.profile>enterprise</quarkus.profile>
-            </properties>
         </profile>
     </profiles>
 
