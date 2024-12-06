@@ -4,12 +4,21 @@ import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
-@JsonIdentityInfo(scope = Project.class, generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+//@JsonIdentityInfo(scope = Project.class, generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Project {
-
+    @JsonProperty("PID")
     private String id;
+    @JsonProperty("Priority")
+    private int priority;
+    @JsonProperty("VB")
+    private int vb;
+    @JsonProperty("GTIN")
+    private String gtin;
+    @JsonProperty("NP")
+    private int np;
     private int releaseDate;
     private int criticalPathDuration;
 

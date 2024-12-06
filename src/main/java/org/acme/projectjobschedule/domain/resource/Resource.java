@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME)
@@ -14,12 +15,13 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
         @JsonSubTypes.Type(value = LocalResource.class, name = "local"),
 })
 @JsonIgnoreProperties(ignoreUnknown = true)
-@JsonIdentityInfo(scope = Resource.class, generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+//@JsonIdentityInfo(scope = Resource.class, generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public abstract class Resource {
-
+    @JsonProperty("RID")
     private String id;
+    @JsonProperty("Capacity")
     private int capacity;
-
+    private boolean renewable;
     protected Resource() {
     }
 

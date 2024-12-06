@@ -42,15 +42,15 @@ public class ProjectJobSchedule {
     }
 
     @JsonCreator
-    public ProjectJobSchedule(@JsonProperty("projects") List<Project> projects,
-            @JsonProperty("resources") List<Resource> resources,
-            @JsonProperty("jobs") List<Job> jobs, @JsonProperty("allocations") List<Allocation> allocations) {
+    public ProjectJobSchedule(@JsonProperty("ProjectList") List<Project> projects,
+                              @JsonProperty("ResourceList")  List<Resource> resources,
+                              @JsonProperty("JobList") List<Job> jobs, @JsonProperty("allocations") List<Allocation> allocations) {
         this.projects = projects;
         this.resources = resources;
         this.jobs = jobs;
-        this.allocations = allocations;
-        this.executionModes = jobs.stream().flatMap(job -> job.getExecutionModes().stream()).toList();
-        this.resourceRequirements = executionModes.stream().flatMap(e -> e.getResourceRequirements().stream()).toList();
+        // this.allocations = allocations;
+       // this.executionModes = jobs.stream().flatMap(job -> job.getExecutionModes().stream()).toList();
+       // this.resourceRequirements = executionModes.stream().flatMap(e -> e.getResourceRequirements().stream()).toList();
     }
 
     public ProjectJobSchedule(HardMediumSoftScore score, SolverStatus solverStatus) {
