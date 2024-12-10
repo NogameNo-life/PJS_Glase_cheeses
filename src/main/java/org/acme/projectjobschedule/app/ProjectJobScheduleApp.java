@@ -2,13 +2,13 @@ package org.acme.projectjobschedule.app;
 
 import ai.timefold.solver.core.api.solver.Solver;
 import ai.timefold.solver.core.api.solver.SolverFactory;
-import ai.timefold.solver.core.config.solver.SolverConfig;;
+import ai.timefold.solver.core.config.solver.SolverConfig;
 import org.acme.projectjobschedule.domain.Allocation;
 import org.acme.projectjobschedule.domain.Job;
 import org.acme.projectjobschedule.domain.Project;
 import org.acme.projectjobschedule.domain.ProjectJobSchedule;
 import org.acme.projectjobschedule.solver.ProjectJobSchedulingConstraintProvider;
-import org.acme.projectjobschedule.data.DemoDataGenerator;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,7 +28,9 @@ public class ProjectJobScheduleApp {
         LARGE
     }
 
+
     public static void main(String[] args) {
+
         SolverFactory<ProjectJobSchedule> solverFactory = SolverFactory.create(new SolverConfig()
                 .withSolutionClass(ProjectJobSchedule.class)
                 .withEntityClasses(Allocation.class)
@@ -38,16 +40,19 @@ public class ProjectJobScheduleApp {
                 .withTerminationSpentLimit(Duration.ofSeconds(5)));
 
         // Load the problem
-        DemoDataGenerator demo_data = new DemoDataGenerator();
-        ProjectJobSchedule problem = demo_data.generateDemoData();
+     //   DemoDataGenerator demo_data = new DemoDataGenerator();
+      //  ProjectJobSchedule problem = demo_data.generateDemoData();
 
-        // Solve the problem
-        Solver<ProjectJobSchedule> solver = solverFactory.buildSolver();
-        ProjectJobSchedule solution = solver.solve(problem);
+        // Load the problem from JSON
+        String filePath = "src/main/resources/data.json"; // Путь к файлу JSON
 
-        // Visualize the solution
-       printProjectJobSchedule(solution);
+        // Создание экземпляра JsonImporter
+        JsonImporter importer = new JsonImporter(filePath);
+        ProjectJobSchedule problem;
+        problem = importer.initProjectJobSheduleObject();
+
     }
+
     public static void  printProjectJobSchedule(ProjectJobSchedule schedule){
             LOGGER.info("");
             List<Project> projects = schedule.getProjects();
