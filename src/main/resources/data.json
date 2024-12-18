@@ -1,0 +1,149 @@
+{
+  "ID": "P1570C30",
+  "StartDate": "2025-02-02 00:00:00",
+  "EndDate": "2025-02-02 23:59:59",
+  "Termination": "TS180;US10",
+  "ResourceList": [
+    {
+      "RID": "Line1",
+      "Capacity": 1,
+      "@type": "global",
+      "Renewable": true,
+      "RestrictionList": []
+    },
+    {
+      "RID": "Line2",
+      "Capacity": 1,
+      "@type": "global",
+      "Renewable": true,
+      "RestrictionList": []
+    }
+  ],
+
+  "JobList": [
+    {
+      "JID": "SOURCE",
+      "SuccessorList": ["Job1"]
+    },
+    {
+      "JID": "Job1",
+      "SuccessorList": ["SINK"]
+    },
+    {
+      "JID": "SINK",
+      "SuccessorList": []
+    }
+  ],
+
+  "ProjectList": [
+    {
+      "PID": "1190163",
+      "Priority": 0,
+      "VB": 227,
+      "GTIN": "01234567890123",
+      "NP": 261,
+      "ExecutionModeList": [
+        {
+          "JID": "SOURCE",
+          "Duration": 0,
+          "ResourceRequirementList": []
+        },
+        {
+          "JID": "Job1",
+          "Duration": 60,
+          "ResourceRequirementList": [
+            {
+              "RID": "Line1",
+              "Requirement": 1
+            }
+          ]
+        },
+        {
+          "JID": "Job1",
+          "Duration": 70,
+          "ResourceRequirementList": [
+            {
+              "RID": "Line2",
+              "Requirement": 1
+            }
+          ]
+        },
+        {
+          "JID": "SINK",
+          "Duration": 0,
+          "ResourceRequirementList": []
+        }
+      ]
+    },
+
+    {
+      "PID": "1190164",
+      "Priority": 0,
+      "VB": 227,
+      "GTIN": "01234567890123",
+      "NP": 262,
+      "ExecutionModeList": [
+        {
+          "JID": "SOURCE",
+          "Duration": 0,
+          "ResourceRequirementList": []
+        },
+        {
+          "JID": "Job1",
+          "Duration": 60,
+          "ResourceRequirementList": [
+            {
+              "RID": "Line1",
+              "Requirement": 1
+            }
+          ]
+        },
+        {
+          "JID": "Job1",
+          "Duration": 70,
+          "ResourceRequirementList": [
+            {
+              "RID": "Line2",
+              "Requirement": 1
+            }
+          ]
+        },
+        {
+          "JID": "SINK",
+          "Duration": 0,
+          "ResourceRequirementList": []
+        }
+      ]
+    },
+
+    {
+      "PID": "1190165",
+      "Priority": 0,
+      "VB": 227,
+      "GTIN": "01234567890123",
+      "NP": 263,
+      "ExecutionModeList": [
+        {
+          "JID": "SOURCE",
+          "Duration": 0,
+          "ResourceRequirementList": []
+        },
+        {
+          "JID": "Job1",
+          "Duration": 60,
+          "ResourceRequirementList": [
+            {
+              "RID": "Line1",
+              "Requirement": 1
+            }
+          ]
+        },
+        {
+          "JID": "SINK",
+          "Duration": 0,
+          "ResourceRequirementList": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,10 +1,11 @@
 package org.acme.projectjobschedule.domain.resource;
 
 import org.acme.projectjobschedule.domain.Project;
-
+import com.fasterxml.jackson.annotation.JsonProperty;
 public class LocalResource extends Resource {
 
     private Project project;
+    @JsonProperty("Renewable")
     private boolean renewable;
 
     public LocalResource() {
