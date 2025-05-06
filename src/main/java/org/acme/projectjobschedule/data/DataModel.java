@@ -330,6 +330,8 @@ public class DataModel extends JsonImporter {
             allocation.setPredecessorAllocations(predecessorAllocations);
             allocation.setSuccessorAllocations(successorAllocations);
             allocation.setPredecessorsDoneDate(doneDate);
+            allocation.setStartDateTime(startDate);
+            allocation.setEndDateTime(startDate);
             boolean isSource = allocation.getJob().getJobType() == SOURCE;
             boolean isSink = allocation.getJob().getJobType() == SINK;
             if (isSource || isSink) {

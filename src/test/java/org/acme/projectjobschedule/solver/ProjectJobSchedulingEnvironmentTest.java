@@ -16,7 +16,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.EnabledIfSystemProperty;
 
 @EnabledIfSystemProperty(named = "slowly", matches = "true")
-class TimetableEnvironmentTest {
+
+public class ProjectJobSchedulingEnvironmentTest {
 
     @Test
     void solveFullAssert() {
@@ -45,5 +46,4 @@ class TimetableEnvironmentTest {
         ProjectJobSchedule solution = solver.solve(problem);
         assertThat(solution.getScore()).isNotNull();
     }
-
 }

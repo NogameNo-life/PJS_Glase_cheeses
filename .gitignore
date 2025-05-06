@@ -23,7 +23,10 @@ venv*
 .DS_Store
 
 #Directories
-.idea/
+/.idea/
+!/.idea/runConfigurations/
 target/
+src/main/resources/exportFiles/
+src/main/resources/importFiles/
 src/main/resources/exportData.json
 src/test/resources/exportData.json

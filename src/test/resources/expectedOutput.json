@@ -1,64 +1,3382 @@
 {
   "ID" : "P1570C30",
   "HardConstraintsPenalty" : 0,
-  "MediumConstraintsPenalty1" : -12,
-  "SoftConstraintsPenalty" : -8,
-  "Projects" : [ "261", "262", "263" ],
-  "Resources" : [ "Line1", "Line2" ],
+  "MediumConstraintsPenalty1" : -114720,
+  "SoftConstraintsPenalty" : -956,
+  "Projects" : [ "177796", "177797", "177798", "177799", "177800", "177801", "177802", "177803", "177804", "177805", "177806", "177807", "177808", "177809", "177810", "177811", "177812", "177813", "177814", "177815", "177816", "177817", "177818", "177819", "177820", "177821", "177822", "177823", "177824", "177825", "177826", "177827", "177828", "177829", "177830", "177831", "177832", "177833", "177834", "177835", "177836", "177837", "177838", "177839", "177840", "177841", "177842", "177843", "177844", "177845", "177846", "177847", "177848", "177849", "177850", "177851", "177852", "177853", "177854", "177855", "177856", "177857", "177858", "177859", "177860", "177861", "177862", "177863", "177864", "177865", "177866", "177867", "177868", "177869", "177870", "177871", "177872", "177873", "177874", "177875", "177876", "177877", "177878", "177879", "177880", "177881", "177882", "177883", "177884", "177885", "177886", "177887", "177888", "177889", "177890", "177891", "177892", "177893", "177894", "177895", "177896", "177897", "177898", "177899", "177900", "177901", "177902", "177903", "177904", "177905", "177906", "177907", "177908", "177909", "177910", "177911", "177912", "177913", "177914", "177915", "177916", "177917", "177918", "177919", "177920", "177921", "177922", "177923", "177924", "177925", "177926", "177927", "177928", "177929", "177930", "177931", "177932", "177933", "177934", "177935", "177936", "177937", "177938", "177939", "177940", "177941", "177942", "177943", "177944", "177945", "177946", "177947", "177948", "177949", "177950", "177951", "177952", "177953", "177954", "177955", "177956", "177957", "177958", "177959", "177960", "177961", "177962", "177963", "177964", "177965", "177966", "177967", "177968", "177969", "177970", "177971", "177972", "177973", "177974", "177975", "177976", "177977", "177978", "177979", "177980", "177981", "177982", "177983", "177984", "177985", "177986", "177987", "177988", "177989", "177990", "177991", "177992", "177993", "177994", "177995", "177996", "177997", "177998", "177999", "178000", "178001", "178002", "178003", "178004", "178005", "178006", "178007", "178008", "178009", "178010", "178011", "178012", "178013", "178014", "178015", "178016", "178017", "178018", "178019", "178020", "178021", "178022", "178023", "178024", "178025", "178026", "178027", "178028", "178029", "178030", "178031", "178032", "178033", "178034", "178036" ],
+  "Resources" : [ "Line1", "Line2", "Line3", "Line4", "Line5", "Line6" ],
   "AllocationList" : [ {
-    "ID" : "Allocation2",
-    "PID" : "261",
-    "JID" : "261,Line1",
-    "StartDate" : "2025-02-02 00:00:00",
-    "EndDate" : "2025-02-02 01:00:00",
-    "Duration" : 60,
+    "ID" : "Allocation3",
+    "PID" : "177796",
+    "JID" : "1,Line4",
+    "StartDate" : "2025-04-01 00:00:00",
+    "EndDate" : "2025-04-01 00:26:00",
+    "Duration" : 26,
     "PredAllocationList" : [ "Allocation1" ],
-    "ResourceRequirementList" : [ "Line1" ]
+    "ResourceRequirementList" : [ "Line4" ]
   }, {
-    "ID" : "Allocation5",
-    "PID" : "262",
-    "JID" : "262,Line2",
-    "StartDate" : "2025-02-02 00:04:00",
-    "EndDate" : "2025-02-02 01:14:00",
-    "Duration" : 70,
+    "ID" : "Allocation6",
+    "PID" : "177797",
+    "JID" : "2,Line5",
+    "StartDate" : "2025-04-01 00:04:00",
+    "EndDate" : "2025-04-01 00:30:00",
+    "Duration" : 26,
     "PredAllocationList" : [ "Allocation4" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation9",
+    "PID" : "177798",
+    "JID" : "3,Line3",
+    "StartDate" : "2025-04-01 00:08:00",
+    "EndDate" : "2025-04-01 00:17:00",
+    "Duration" : 9,
+    "PredAllocationList" : [ "Allocation7" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation12",
+    "PID" : "177799",
+    "JID" : "4,Line6",
+    "StartDate" : "2025-04-01 00:12:00",
+    "EndDate" : "2025-04-01 00:19:00",
+    "Duration" : 7,
+    "PredAllocationList" : [ "Allocation10" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation15",
+    "PID" : "177800",
+    "JID" : "5,Line2",
+    "StartDate" : "2025-04-01 00:16:00",
+    "EndDate" : "2025-04-01 00:45:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation13" ],
     "ResourceRequirementList" : [ "Line2" ]
   }, {
-    "ID" : "Allocation8",
-    "PID" : "263",
-    "JID" : "263,Line1",
-    "StartDate" : "2025-02-02 01:00:00",
-    "EndDate" : "2025-02-02 02:00:00",
-    "Duration" : 60,
-    "PredAllocationList" : [ "Allocation7" ],
+    "ID" : "Allocation18",
+    "PID" : "177801",
+    "JID" : "6,Line6",
+    "StartDate" : "2025-04-01 00:20:00",
+    "EndDate" : "2025-04-01 00:46:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation16" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation21",
+    "PID" : "177802",
+    "JID" : "7,Line3",
+    "StartDate" : "2025-04-01 00:24:00",
+    "EndDate" : "2025-04-01 00:52:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation19" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation24",
+    "PID" : "177803",
+    "JID" : "8,Line4",
+    "StartDate" : "2025-04-01 00:28:00",
+    "EndDate" : "2025-04-01 00:54:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation22" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation27",
+    "PID" : "177804",
+    "JID" : "9,Line5",
+    "StartDate" : "2025-04-01 00:32:00",
+    "EndDate" : "2025-04-01 00:58:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation25" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation30",
+    "PID" : "177805",
+    "JID" : "10,Line1",
+    "StartDate" : "2025-04-01 00:36:00",
+    "EndDate" : "2025-04-01 01:05:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation28" ],
     "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation33",
+    "PID" : "177806",
+    "JID" : "11,Line6",
+    "StartDate" : "2025-04-01 00:46:00",
+    "EndDate" : "2025-04-01 01:12:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation31" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation36",
+    "PID" : "177807",
+    "JID" : "12,Line2",
+    "StartDate" : "2025-04-01 00:45:00",
+    "EndDate" : "2025-04-01 01:14:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation34" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation39",
+    "PID" : "177808",
+    "JID" : "13,Line3",
+    "StartDate" : "2025-04-01 00:52:00",
+    "EndDate" : "2025-04-01 01:20:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation37" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation42",
+    "PID" : "177809",
+    "JID" : "14,Line4",
+    "StartDate" : "2025-04-01 00:54:00",
+    "EndDate" : "2025-04-01 01:20:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation40" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation45",
+    "PID" : "177810",
+    "JID" : "15,Line5",
+    "StartDate" : "2025-04-01 00:58:00",
+    "EndDate" : "2025-04-01 01:24:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation43" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation48",
+    "PID" : "177811",
+    "JID" : "16,Line1",
+    "StartDate" : "2025-04-01 01:05:00",
+    "EndDate" : "2025-04-01 01:34:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation46" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation51",
+    "PID" : "177812",
+    "JID" : "17,Line6",
+    "StartDate" : "2025-04-01 01:12:00",
+    "EndDate" : "2025-04-01 01:38:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation49" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation54",
+    "PID" : "177813",
+    "JID" : "18,Line2",
+    "StartDate" : "2025-04-01 01:14:00",
+    "EndDate" : "2025-04-01 01:43:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation52" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation57",
+    "PID" : "177814",
+    "JID" : "19,Line4",
+    "StartDate" : "2025-04-01 01:20:00",
+    "EndDate" : "2025-04-01 01:46:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation55" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation60",
+    "PID" : "177815",
+    "JID" : "20,Line3",
+    "StartDate" : "2025-04-01 01:20:00",
+    "EndDate" : "2025-04-01 01:48:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation58" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation63",
+    "PID" : "177816",
+    "JID" : "21,Line5",
+    "StartDate" : "2025-04-01 01:24:00",
+    "EndDate" : "2025-04-01 01:50:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation61" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation66",
+    "PID" : "177817",
+    "JID" : "22,Line1",
+    "StartDate" : "2025-04-01 01:34:00",
+    "EndDate" : "2025-04-01 02:03:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation64" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation69",
+    "PID" : "177818",
+    "JID" : "23,Line6",
+    "StartDate" : "2025-04-01 01:38:00",
+    "EndDate" : "2025-04-01 02:04:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation67" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation72",
+    "PID" : "177819",
+    "JID" : "24,Line2",
+    "StartDate" : "2025-04-01 01:43:00",
+    "EndDate" : "2025-04-01 02:12:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation70" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation75",
+    "PID" : "177820",
+    "JID" : "25,Line4",
+    "StartDate" : "2025-04-01 01:46:00",
+    "EndDate" : "2025-04-01 02:12:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation73" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation78",
+    "PID" : "177821",
+    "JID" : "26,Line3",
+    "StartDate" : "2025-04-01 01:48:00",
+    "EndDate" : "2025-04-01 02:16:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation76" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation81",
+    "PID" : "177822",
+    "JID" : "27,Line5",
+    "StartDate" : "2025-04-01 01:50:00",
+    "EndDate" : "2025-04-01 02:16:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation79" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation84",
+    "PID" : "177823",
+    "JID" : "28,Line6",
+    "StartDate" : "2025-04-01 02:04:00",
+    "EndDate" : "2025-04-01 02:30:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation82" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation87",
+    "PID" : "177824",
+    "JID" : "29,Line1",
+    "StartDate" : "2025-04-01 02:03:00",
+    "EndDate" : "2025-04-01 02:32:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation85" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation90",
+    "PID" : "177825",
+    "JID" : "30,Line4",
+    "StartDate" : "2025-04-01 02:12:00",
+    "EndDate" : "2025-04-01 02:38:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation88" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation93",
+    "PID" : "177826",
+    "JID" : "31,Line2",
+    "StartDate" : "2025-04-01 02:12:00",
+    "EndDate" : "2025-04-01 02:41:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation91" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation96",
+    "PID" : "177827",
+    "JID" : "32,Line5",
+    "StartDate" : "2025-04-01 02:16:00",
+    "EndDate" : "2025-04-01 02:42:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation94" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation99",
+    "PID" : "177828",
+    "JID" : "33,Line3",
+    "StartDate" : "2025-04-01 02:16:00",
+    "EndDate" : "2025-04-01 02:44:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation97" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation102",
+    "PID" : "177829",
+    "JID" : "34,Line6",
+    "StartDate" : "2025-04-01 02:30:00",
+    "EndDate" : "2025-04-01 02:56:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation100" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation105",
+    "PID" : "177830",
+    "JID" : "35,Line1",
+    "StartDate" : "2025-04-01 02:32:00",
+    "EndDate" : "2025-04-01 03:01:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation103" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation108",
+    "PID" : "177831",
+    "JID" : "36,Line4",
+    "StartDate" : "2025-04-01 02:38:00",
+    "EndDate" : "2025-04-01 03:04:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation106" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation111",
+    "PID" : "177832",
+    "JID" : "37,Line5",
+    "StartDate" : "2025-04-01 02:42:00",
+    "EndDate" : "2025-04-01 03:08:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation109" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation114",
+    "PID" : "177833",
+    "JID" : "38,Line2",
+    "StartDate" : "2025-04-01 02:41:00",
+    "EndDate" : "2025-04-01 03:10:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation112" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation117",
+    "PID" : "177834",
+    "JID" : "39,Line3",
+    "StartDate" : "2025-04-01 02:44:00",
+    "EndDate" : "2025-04-01 03:12:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation115" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation120",
+    "PID" : "177835",
+    "JID" : "40,Line6",
+    "StartDate" : "2025-04-01 02:56:00",
+    "EndDate" : "2025-04-01 03:22:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation118" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation123",
+    "PID" : "177836",
+    "JID" : "41,Line1",
+    "StartDate" : "2025-04-01 03:01:00",
+    "EndDate" : "2025-04-01 03:30:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation121" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation126",
+    "PID" : "177837",
+    "JID" : "42,Line4",
+    "StartDate" : "2025-04-01 03:04:00",
+    "EndDate" : "2025-04-01 03:30:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation124" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation129",
+    "PID" : "177838",
+    "JID" : "43,Line5",
+    "StartDate" : "2025-04-01 03:08:00",
+    "EndDate" : "2025-04-01 03:34:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation127" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation132",
+    "PID" : "177839",
+    "JID" : "44,Line2",
+    "StartDate" : "2025-04-01 03:10:00",
+    "EndDate" : "2025-04-01 03:39:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation130" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation135",
+    "PID" : "177840",
+    "JID" : "45,Line3",
+    "StartDate" : "2025-04-01 03:12:00",
+    "EndDate" : "2025-04-01 03:40:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation133" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation138",
+    "PID" : "177841",
+    "JID" : "46,Line6",
+    "StartDate" : "2025-04-01 03:22:00",
+    "EndDate" : "2025-04-01 03:48:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation136" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation141",
+    "PID" : "177842",
+    "JID" : "47,Line4",
+    "StartDate" : "2025-04-01 03:30:00",
+    "EndDate" : "2025-04-01 03:56:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation139" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation144",
+    "PID" : "177843",
+    "JID" : "48,Line1",
+    "StartDate" : "2025-04-01 03:30:00",
+    "EndDate" : "2025-04-01 03:59:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation142" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation147",
+    "PID" : "177844",
+    "JID" : "49,Line5",
+    "StartDate" : "2025-04-01 03:34:00",
+    "EndDate" : "2025-04-01 04:00:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation145" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation150",
+    "PID" : "177845",
+    "JID" : "50,Line2",
+    "StartDate" : "2025-04-01 03:39:00",
+    "EndDate" : "2025-04-01 04:08:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation148" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation153",
+    "PID" : "177846",
+    "JID" : "51,Line3",
+    "StartDate" : "2025-04-01 03:40:00",
+    "EndDate" : "2025-04-01 04:08:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation151" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation156",
+    "PID" : "177847",
+    "JID" : "52,Line6",
+    "StartDate" : "2025-04-01 03:48:00",
+    "EndDate" : "2025-04-01 04:14:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation154" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation159",
+    "PID" : "177848",
+    "JID" : "1,Line4",
+    "StartDate" : "2025-04-01 03:56:00",
+    "EndDate" : "2025-04-01 04:22:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation157" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation162",
+    "PID" : "177849",
+    "JID" : "2,Line5",
+    "StartDate" : "2025-04-01 04:00:00",
+    "EndDate" : "2025-04-01 04:26:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation160" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation165",
+    "PID" : "177850",
+    "JID" : "3,Line1",
+    "StartDate" : "2025-04-01 03:59:00",
+    "EndDate" : "2025-04-01 04:08:00",
+    "Duration" : 9,
+    "PredAllocationList" : [ "Allocation163" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation168",
+    "PID" : "177851",
+    "JID" : "4,Line3",
+    "StartDate" : "2025-04-01 04:08:00",
+    "EndDate" : "2025-04-01 04:36:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation166" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation171",
+    "PID" : "177852",
+    "JID" : "5,Line2",
+    "StartDate" : "2025-04-01 04:08:00",
+    "EndDate" : "2025-04-01 04:37:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation169" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation174",
+    "PID" : "177853",
+    "JID" : "6,Line1",
+    "StartDate" : "2025-04-01 04:08:00",
+    "EndDate" : "2025-04-01 04:37:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation172" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation177",
+    "PID" : "177854",
+    "JID" : "7,Line6",
+    "StartDate" : "2025-04-01 04:14:00",
+    "EndDate" : "2025-04-01 04:40:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation175" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation180",
+    "PID" : "177855",
+    "JID" : "8,Line4",
+    "StartDate" : "2025-04-01 04:22:00",
+    "EndDate" : "2025-04-01 04:48:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation178" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation183",
+    "PID" : "177856",
+    "JID" : "9,Line5",
+    "StartDate" : "2025-04-01 04:26:00",
+    "EndDate" : "2025-04-01 04:52:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation181" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation186",
+    "PID" : "177857",
+    "JID" : "10,Line3",
+    "StartDate" : "2025-04-01 04:36:00",
+    "EndDate" : "2025-04-01 05:04:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation184" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation189",
+    "PID" : "177858",
+    "JID" : "11,Line2",
+    "StartDate" : "2025-04-01 04:37:00",
+    "EndDate" : "2025-04-01 05:06:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation187" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation192",
+    "PID" : "177859",
+    "JID" : "12,Line1",
+    "StartDate" : "2025-04-01 04:37:00",
+    "EndDate" : "2025-04-01 05:06:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation190" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation195",
+    "PID" : "177860",
+    "JID" : "13,Line6",
+    "StartDate" : "2025-04-01 04:40:00",
+    "EndDate" : "2025-04-01 05:06:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation193" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation198",
+    "PID" : "177861",
+    "JID" : "14,Line4",
+    "StartDate" : "2025-04-01 04:48:00",
+    "EndDate" : "2025-04-01 04:54:00",
+    "Duration" : 6,
+    "PredAllocationList" : [ "Allocation196" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation201",
+    "PID" : "177862",
+    "JID" : "1,Line1",
+    "StartDate" : "2025-04-01 05:06:00",
+    "EndDate" : "2025-04-01 05:27:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation199" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation204",
+    "PID" : "177863",
+    "JID" : "2,Line1",
+    "StartDate" : "2025-04-01 05:27:00",
+    "EndDate" : "2025-04-01 05:31:00",
+    "Duration" : 4,
+    "PredAllocationList" : [ "Allocation202" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation207",
+    "PID" : "177864",
+    "JID" : "3,Line1",
+    "StartDate" : "2025-04-01 05:31:00",
+    "EndDate" : "2025-04-01 05:52:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation205" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation210",
+    "PID" : "177865",
+    "JID" : "4,Line1",
+    "StartDate" : "2025-04-01 05:52:00",
+    "EndDate" : "2025-04-01 06:13:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation208" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation213",
+    "PID" : "177866",
+    "JID" : "5,Line1",
+    "StartDate" : "2025-04-01 06:13:00",
+    "EndDate" : "2025-04-01 06:34:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation211" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation216",
+    "PID" : "177867",
+    "JID" : "6,Line1",
+    "StartDate" : "2025-04-01 06:34:00",
+    "EndDate" : "2025-04-01 06:55:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation214" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation219",
+    "PID" : "177868",
+    "JID" : "7,Line1",
+    "StartDate" : "2025-04-01 06:55:00",
+    "EndDate" : "2025-04-01 07:16:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation217" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation222",
+    "PID" : "177869",
+    "JID" : "8,Line1",
+    "StartDate" : "2025-04-01 07:16:00",
+    "EndDate" : "2025-04-01 07:37:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation220" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation225",
+    "PID" : "177870",
+    "JID" : "9,Line1",
+    "StartDate" : "2025-04-01 07:37:00",
+    "EndDate" : "2025-04-01 07:58:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation223" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation228",
+    "PID" : "177871",
+    "JID" : "10,Line1",
+    "StartDate" : "2025-04-01 07:58:00",
+    "EndDate" : "2025-04-01 08:19:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation226" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation231",
+    "PID" : "177872",
+    "JID" : "11,Line1",
+    "StartDate" : "2025-04-01 08:19:00",
+    "EndDate" : "2025-04-01 08:40:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation229" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation234",
+    "PID" : "177873",
+    "JID" : "12,Line1",
+    "StartDate" : "2025-04-01 08:40:00",
+    "EndDate" : "2025-04-01 08:44:00",
+    "Duration" : 4,
+    "PredAllocationList" : [ "Allocation232" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation237",
+    "PID" : "177874",
+    "JID" : "1,Line1",
+    "StartDate" : "2025-04-01 08:44:00",
+    "EndDate" : "2025-04-01 08:56:00",
+    "Duration" : 12,
+    "PredAllocationList" : [ "Allocation235" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation240",
+    "PID" : "177875",
+    "JID" : "2,Line1",
+    "StartDate" : "2025-04-01 08:56:00",
+    "EndDate" : "2025-04-01 09:17:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation238" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation243",
+    "PID" : "177876",
+    "JID" : "3,Line1",
+    "StartDate" : "2025-04-01 09:17:00",
+    "EndDate" : "2025-04-01 09:38:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation241" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation246",
+    "PID" : "177877",
+    "JID" : "4,Line1",
+    "StartDate" : "2025-04-01 09:38:00",
+    "EndDate" : "2025-04-01 09:59:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation244" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation249",
+    "PID" : "177878",
+    "JID" : "5,Line1",
+    "StartDate" : "2025-04-01 09:59:00",
+    "EndDate" : "2025-04-01 10:20:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation247" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation252",
+    "PID" : "177879",
+    "JID" : "6,Line1",
+    "StartDate" : "2025-04-01 10:20:00",
+    "EndDate" : "2025-04-01 10:41:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation250" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation255",
+    "PID" : "177880",
+    "JID" : "7,Line1",
+    "StartDate" : "2025-04-01 10:41:00",
+    "EndDate" : "2025-04-01 11:02:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation253" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation258",
+    "PID" : "177881",
+    "JID" : "8,Line1",
+    "StartDate" : "2025-04-01 11:02:00",
+    "EndDate" : "2025-04-01 11:23:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation256" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation261",
+    "PID" : "177882",
+    "JID" : "9,Line1",
+    "StartDate" : "2025-04-01 11:23:00",
+    "EndDate" : "2025-04-01 11:44:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation259" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation264",
+    "PID" : "177883",
+    "JID" : "10,Line1",
+    "StartDate" : "2025-04-01 11:44:00",
+    "EndDate" : "2025-04-01 12:05:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation262" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation267",
+    "PID" : "177884",
+    "JID" : "11,Line1",
+    "StartDate" : "2025-04-01 12:05:00",
+    "EndDate" : "2025-04-01 12:26:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation265" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation270",
+    "PID" : "177885",
+    "JID" : "12,Line1",
+    "StartDate" : "2025-04-01 12:26:00",
+    "EndDate" : "2025-04-01 12:47:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation268" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation273",
+    "PID" : "177886",
+    "JID" : "13,Line1",
+    "StartDate" : "2025-04-01 12:47:00",
+    "EndDate" : "2025-04-01 13:08:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation271" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation276",
+    "PID" : "177887",
+    "JID" : "14,Line1",
+    "StartDate" : "2025-04-01 13:08:00",
+    "EndDate" : "2025-04-01 13:29:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation274" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation279",
+    "PID" : "177888",
+    "JID" : "15,Line1",
+    "StartDate" : "2025-04-01 13:29:00",
+    "EndDate" : "2025-04-01 13:50:00",
+    "Duration" : 21,
+    "PredAllocationList" : [ "Allocation277" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation282",
+    "PID" : "177889",
+    "JID" : "16,Line1",
+    "StartDate" : "2025-04-01 13:50:00",
+    "EndDate" : "2025-04-01 14:05:00",
+    "Duration" : 15,
+    "PredAllocationList" : [ "Allocation280" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation285",
+    "PID" : "177890",
+    "JID" : "1,Line4",
+    "StartDate" : "2025-04-01 06:16:00",
+    "EndDate" : "2025-04-01 06:42:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation283" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation288",
+    "PID" : "177891",
+    "JID" : "2,Line5",
+    "StartDate" : "2025-04-01 06:20:00",
+    "EndDate" : "2025-04-01 06:46:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation286" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation291",
+    "PID" : "177892",
+    "JID" : "3,Line6",
+    "StartDate" : "2025-04-01 06:24:00",
+    "EndDate" : "2025-04-01 06:50:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation289" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation294",
+    "PID" : "177893",
+    "JID" : "4,Line3",
+    "StartDate" : "2025-04-01 06:28:00",
+    "EndDate" : "2025-04-01 06:56:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation292" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation297",
+    "PID" : "177894",
+    "JID" : "5,Line2",
+    "StartDate" : "2025-04-01 06:32:00",
+    "EndDate" : "2025-04-01 07:01:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation295" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation300",
+    "PID" : "177895",
+    "JID" : "6,Line4",
+    "StartDate" : "2025-04-01 06:42:00",
+    "EndDate" : "2025-04-01 07:08:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation298" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation303",
+    "PID" : "177896",
+    "JID" : "7,Line5",
+    "StartDate" : "2025-04-01 06:46:00",
+    "EndDate" : "2025-04-01 07:12:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation301" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation306",
+    "PID" : "177897",
+    "JID" : "8,Line6",
+    "StartDate" : "2025-04-01 06:50:00",
+    "EndDate" : "2025-04-01 07:16:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation304" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation309",
+    "PID" : "177898",
+    "JID" : "9,Line3",
+    "StartDate" : "2025-04-01 06:56:00",
+    "EndDate" : "2025-04-01 07:24:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation307" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation312",
+    "PID" : "177899",
+    "JID" : "10,Line2",
+    "StartDate" : "2025-04-01 07:01:00",
+    "EndDate" : "2025-04-01 07:30:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation310" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation315",
+    "PID" : "177900",
+    "JID" : "11,Line4",
+    "StartDate" : "2025-04-01 07:08:00",
+    "EndDate" : "2025-04-01 07:34:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation313" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation318",
+    "PID" : "177901",
+    "JID" : "12,Line5",
+    "StartDate" : "2025-04-01 07:12:00",
+    "EndDate" : "2025-04-01 07:38:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation316" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation321",
+    "PID" : "177902",
+    "JID" : "13,Line6",
+    "StartDate" : "2025-04-01 07:16:00",
+    "EndDate" : "2025-04-01 07:42:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation319" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation324",
+    "PID" : "177903",
+    "JID" : "14,Line3",
+    "StartDate" : "2025-04-01 07:24:00",
+    "EndDate" : "2025-04-01 07:52:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation322" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation327",
+    "PID" : "177904",
+    "JID" : "15,Line2",
+    "StartDate" : "2025-04-01 07:30:00",
+    "EndDate" : "2025-04-01 07:43:00",
+    "Duration" : 13,
+    "PredAllocationList" : [ "Allocation325" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation330",
+    "PID" : "177905",
+    "JID" : "1,Line4",
+    "StartDate" : "2025-04-01 07:34:00",
+    "EndDate" : "2025-04-01 08:00:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation328" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation333",
+    "PID" : "177906",
+    "JID" : "2,Line5",
+    "StartDate" : "2025-04-01 07:38:00",
+    "EndDate" : "2025-04-01 08:04:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation331" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation336",
+    "PID" : "177907",
+    "JID" : "3,Line6",
+    "StartDate" : "2025-04-01 07:42:00",
+    "EndDate" : "2025-04-01 08:08:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation334" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation339",
+    "PID" : "177908",
+    "JID" : "4,Line2",
+    "StartDate" : "2025-04-01 07:43:00",
+    "EndDate" : "2025-04-01 08:12:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation337" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation342",
+    "PID" : "177909",
+    "JID" : "5,Line3",
+    "StartDate" : "2025-04-01 07:52:00",
+    "EndDate" : "2025-04-01 08:20:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation340" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation345",
+    "PID" : "177910",
+    "JID" : "6,Line4",
+    "StartDate" : "2025-04-01 08:00:00",
+    "EndDate" : "2025-04-01 08:26:00",
+    "Duration" : 26,
+    "PredAllocationList" : [ "Allocation343" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation348",
+    "PID" : "177911",
+    "JID" : "7,Line5",
+    "StartDate" : "2025-04-01 08:04:00",
+    "EndDate" : "2025-04-01 08:07:00",
+    "Duration" : 3,
+    "PredAllocationList" : [ "Allocation346" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation351",
+    "PID" : "177912",
+    "JID" : "1,Line5",
+    "StartDate" : "2025-04-01 08:07:00",
+    "EndDate" : "2025-04-01 08:29:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation349" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation354",
+    "PID" : "177913",
+    "JID" : "2,Line6",
+    "StartDate" : "2025-04-01 08:08:00",
+    "EndDate" : "2025-04-01 08:30:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation352" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation357",
+    "PID" : "177914",
+    "JID" : "3,Line4",
+    "StartDate" : "2025-04-01 08:26:00",
+    "EndDate" : "2025-04-01 08:48:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation355" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation360",
+    "PID" : "177915",
+    "JID" : "4,Line5",
+    "StartDate" : "2025-04-01 08:29:00",
+    "EndDate" : "2025-04-01 08:39:00",
+    "Duration" : 10,
+    "PredAllocationList" : [ "Allocation358" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation363",
+    "PID" : "177916",
+    "JID" : "5,Line6",
+    "StartDate" : "2025-04-01 08:30:00",
+    "EndDate" : "2025-04-01 08:52:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation361" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation366",
+    "PID" : "177917",
+    "JID" : "6,Line5",
+    "StartDate" : "2025-04-01 08:39:00",
+    "EndDate" : "2025-04-01 09:01:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation364" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation369",
+    "PID" : "177918",
+    "JID" : "7,Line4",
+    "StartDate" : "2025-04-01 08:48:00",
+    "EndDate" : "2025-04-01 09:10:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation367" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation372",
+    "PID" : "177919",
+    "JID" : "8,Line6",
+    "StartDate" : "2025-04-01 08:52:00",
+    "EndDate" : "2025-04-01 09:14:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation370" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation375",
+    "PID" : "177920",
+    "JID" : "9,Line5",
+    "StartDate" : "2025-04-01 09:01:00",
+    "EndDate" : "2025-04-01 09:23:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation373" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation378",
+    "PID" : "177921",
+    "JID" : "10,Line4",
+    "StartDate" : "2025-04-01 09:10:00",
+    "EndDate" : "2025-04-01 09:32:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation376" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation381",
+    "PID" : "177922",
+    "JID" : "11,Line6",
+    "StartDate" : "2025-04-01 09:14:00",
+    "EndDate" : "2025-04-01 09:36:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation379" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation384",
+    "PID" : "177923",
+    "JID" : "12,Line5",
+    "StartDate" : "2025-04-01 09:23:00",
+    "EndDate" : "2025-04-01 09:45:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation382" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation387",
+    "PID" : "177924",
+    "JID" : "13,Line4",
+    "StartDate" : "2025-04-01 09:32:00",
+    "EndDate" : "2025-04-01 09:54:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation385" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation390",
+    "PID" : "177925",
+    "JID" : "14,Line6",
+    "StartDate" : "2025-04-01 09:36:00",
+    "EndDate" : "2025-04-01 09:58:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation388" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation393",
+    "PID" : "177926",
+    "JID" : "15,Line5",
+    "StartDate" : "2025-04-01 09:45:00",
+    "EndDate" : "2025-04-01 10:07:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation391" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation396",
+    "PID" : "177927",
+    "JID" : "16,Line4",
+    "StartDate" : "2025-04-01 09:54:00",
+    "EndDate" : "2025-04-01 10:16:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation394" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation399",
+    "PID" : "177928",
+    "JID" : "17,Line6",
+    "StartDate" : "2025-04-01 09:58:00",
+    "EndDate" : "2025-04-01 10:07:00",
+    "Duration" : 9,
+    "PredAllocationList" : [ "Allocation397" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation402",
+    "PID" : "177929",
+    "JID" : "1,Line5",
+    "StartDate" : "2025-04-01 10:07:00",
+    "EndDate" : "2025-04-01 10:29:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation400" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation405",
+    "PID" : "177930",
+    "JID" : "2,Line6",
+    "StartDate" : "2025-04-01 10:07:00",
+    "EndDate" : "2025-04-01 10:29:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation403" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation408",
+    "PID" : "177931",
+    "JID" : "3,Line4",
+    "StartDate" : "2025-04-01 10:16:00",
+    "EndDate" : "2025-04-01 10:38:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation406" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation411",
+    "PID" : "177932",
+    "JID" : "4,Line5",
+    "StartDate" : "2025-04-01 10:29:00",
+    "EndDate" : "2025-04-01 10:51:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation409" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation414",
+    "PID" : "177933",
+    "JID" : "5,Line6",
+    "StartDate" : "2025-04-01 10:29:00",
+    "EndDate" : "2025-04-01 10:51:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation412" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation417",
+    "PID" : "177934",
+    "JID" : "6,Line4",
+    "StartDate" : "2025-04-01 10:38:00",
+    "EndDate" : "2025-04-01 11:00:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation415" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation420",
+    "PID" : "177935",
+    "JID" : "7,Line5",
+    "StartDate" : "2025-04-01 10:51:00",
+    "EndDate" : "2025-04-01 11:13:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation418" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation423",
+    "PID" : "177936",
+    "JID" : "8,Line6",
+    "StartDate" : "2025-04-01 10:51:00",
+    "EndDate" : "2025-04-01 11:13:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation421" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation426",
+    "PID" : "177937",
+    "JID" : "9,Line4",
+    "StartDate" : "2025-04-01 11:00:00",
+    "EndDate" : "2025-04-01 11:22:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation424" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation429",
+    "PID" : "177938",
+    "JID" : "10,Line5",
+    "StartDate" : "2025-04-01 11:13:00",
+    "EndDate" : "2025-04-01 11:35:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation427" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation432",
+    "PID" : "177939",
+    "JID" : "11,Line6",
+    "StartDate" : "2025-04-01 11:13:00",
+    "EndDate" : "2025-04-01 11:35:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation430" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation435",
+    "PID" : "177940",
+    "JID" : "12,Line4",
+    "StartDate" : "2025-04-01 11:22:00",
+    "EndDate" : "2025-04-01 11:44:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation433" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation438",
+    "PID" : "177941",
+    "JID" : "13,Line5",
+    "StartDate" : "2025-04-01 11:35:00",
+    "EndDate" : "2025-04-01 11:57:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation436" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation441",
+    "PID" : "177942",
+    "JID" : "14,Line6",
+    "StartDate" : "2025-04-01 11:35:00",
+    "EndDate" : "2025-04-01 11:57:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation439" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation444",
+    "PID" : "177943",
+    "JID" : "15,Line4",
+    "StartDate" : "2025-04-01 11:44:00",
+    "EndDate" : "2025-04-01 12:06:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation442" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation447",
+    "PID" : "177944",
+    "JID" : "16,Line5",
+    "StartDate" : "2025-04-01 11:57:00",
+    "EndDate" : "2025-04-01 12:19:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation445" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation450",
+    "PID" : "177945",
+    "JID" : "17,Line6",
+    "StartDate" : "2025-04-01 11:57:00",
+    "EndDate" : "2025-04-01 12:19:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation448" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation453",
+    "PID" : "177946",
+    "JID" : "18,Line4",
+    "StartDate" : "2025-04-01 12:06:00",
+    "EndDate" : "2025-04-01 12:21:00",
+    "Duration" : 15,
+    "PredAllocationList" : [ "Allocation451" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation456",
+    "PID" : "177947",
+    "JID" : "1,Line5",
+    "StartDate" : "2025-04-01 12:19:00",
+    "EndDate" : "2025-04-01 12:41:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation454" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation459",
+    "PID" : "177948",
+    "JID" : "2,Line6",
+    "StartDate" : "2025-04-01 12:19:00",
+    "EndDate" : "2025-04-01 12:41:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation457" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation462",
+    "PID" : "177949",
+    "JID" : "3,Line4",
+    "StartDate" : "2025-04-01 12:21:00",
+    "EndDate" : "2025-04-01 12:43:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation460" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation465",
+    "PID" : "177950",
+    "JID" : "4,Line5",
+    "StartDate" : "2025-04-01 12:41:00",
+    "EndDate" : "2025-04-01 13:03:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation463" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation468",
+    "PID" : "177951",
+    "JID" : "5,Line6",
+    "StartDate" : "2025-04-01 12:41:00",
+    "EndDate" : "2025-04-01 13:03:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation466" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation471",
+    "PID" : "177952",
+    "JID" : "6,Line4",
+    "StartDate" : "2025-04-01 12:43:00",
+    "EndDate" : "2025-04-01 13:05:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation469" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation474",
+    "PID" : "177953",
+    "JID" : "7,Line5",
+    "StartDate" : "2025-04-01 13:03:00",
+    "EndDate" : "2025-04-01 13:25:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation472" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation477",
+    "PID" : "177954",
+    "JID" : "8,Line6",
+    "StartDate" : "2025-04-01 13:03:00",
+    "EndDate" : "2025-04-01 13:25:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation475" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation480",
+    "PID" : "177955",
+    "JID" : "9,Line4",
+    "StartDate" : "2025-04-01 13:05:00",
+    "EndDate" : "2025-04-01 13:27:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation478" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation483",
+    "PID" : "177956",
+    "JID" : "10,Line5",
+    "StartDate" : "2025-04-01 13:25:00",
+    "EndDate" : "2025-04-01 13:47:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation481" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation486",
+    "PID" : "177957",
+    "JID" : "11,Line6",
+    "StartDate" : "2025-04-01 13:25:00",
+    "EndDate" : "2025-04-01 13:47:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation484" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation489",
+    "PID" : "177958",
+    "JID" : "12,Line4",
+    "StartDate" : "2025-04-01 13:27:00",
+    "EndDate" : "2025-04-01 13:49:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation487" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation492",
+    "PID" : "177959",
+    "JID" : "13,Line5",
+    "StartDate" : "2025-04-01 13:47:00",
+    "EndDate" : "2025-04-01 14:09:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation490" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation495",
+    "PID" : "177960",
+    "JID" : "14,Line6",
+    "StartDate" : "2025-04-01 13:47:00",
+    "EndDate" : "2025-04-01 14:09:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation493" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation498",
+    "PID" : "177961",
+    "JID" : "15,Line4",
+    "StartDate" : "2025-04-01 13:49:00",
+    "EndDate" : "2025-04-01 14:11:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation496" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation501",
+    "PID" : "177962",
+    "JID" : "16,Line5",
+    "StartDate" : "2025-04-01 14:09:00",
+    "EndDate" : "2025-04-01 14:31:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation499" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation504",
+    "PID" : "177963",
+    "JID" : "17,Line6",
+    "StartDate" : "2025-04-01 14:09:00",
+    "EndDate" : "2025-04-01 14:31:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation502" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation507",
+    "PID" : "177964",
+    "JID" : "18,Line4",
+    "StartDate" : "2025-04-01 14:11:00",
+    "EndDate" : "2025-04-01 14:33:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation505" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation510",
+    "PID" : "177965",
+    "JID" : "19,Line5",
+    "StartDate" : "2025-04-01 14:31:00",
+    "EndDate" : "2025-04-01 14:53:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation508" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation513",
+    "PID" : "177966",
+    "JID" : "20,Line6",
+    "StartDate" : "2025-04-01 14:31:00",
+    "EndDate" : "2025-04-01 14:53:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation511" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation516",
+    "PID" : "177967",
+    "JID" : "21,Line4",
+    "StartDate" : "2025-04-01 14:33:00",
+    "EndDate" : "2025-04-01 14:55:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation514" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation519",
+    "PID" : "177968",
+    "JID" : "22,Line5",
+    "StartDate" : "2025-04-01 14:53:00",
+    "EndDate" : "2025-04-01 15:15:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation517" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation522",
+    "PID" : "177969",
+    "JID" : "23,Line6",
+    "StartDate" : "2025-04-01 14:53:00",
+    "EndDate" : "2025-04-01 15:15:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation520" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation525",
+    "PID" : "177970",
+    "JID" : "24,Line4",
+    "StartDate" : "2025-04-01 14:55:00",
+    "EndDate" : "2025-04-01 15:17:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation523" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation528",
+    "PID" : "177971",
+    "JID" : "25,Line5",
+    "StartDate" : "2025-04-01 15:15:00",
+    "EndDate" : "2025-04-01 15:37:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation526" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation531",
+    "PID" : "177972",
+    "JID" : "26,Line6",
+    "StartDate" : "2025-04-01 15:15:00",
+    "EndDate" : "2025-04-01 15:37:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation529" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation534",
+    "PID" : "177973",
+    "JID" : "27,Line4",
+    "StartDate" : "2025-04-01 15:17:00",
+    "EndDate" : "2025-04-01 15:39:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation532" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation537",
+    "PID" : "177974",
+    "JID" : "28,Line5",
+    "StartDate" : "2025-04-01 15:37:00",
+    "EndDate" : "2025-04-01 15:59:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation535" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation540",
+    "PID" : "177975",
+    "JID" : "29,Line6",
+    "StartDate" : "2025-04-01 15:37:00",
+    "EndDate" : "2025-04-01 15:59:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation538" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation543",
+    "PID" : "177976",
+    "JID" : "30,Line4",
+    "StartDate" : "2025-04-01 15:39:00",
+    "EndDate" : "2025-04-01 16:01:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation541" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation546",
+    "PID" : "177977",
+    "JID" : "31,Line5",
+    "StartDate" : "2025-04-01 15:59:00",
+    "EndDate" : "2025-04-01 16:21:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation544" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation549",
+    "PID" : "177978",
+    "JID" : "32,Line6",
+    "StartDate" : "2025-04-01 15:59:00",
+    "EndDate" : "2025-04-01 16:08:00",
+    "Duration" : 9,
+    "PredAllocationList" : [ "Allocation547" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation552",
+    "PID" : "177979",
+    "JID" : "1,Line4",
+    "StartDate" : "2025-04-01 16:01:00",
+    "EndDate" : "2025-04-01 16:23:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation550" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation555",
+    "PID" : "177980",
+    "JID" : "2,Line6",
+    "StartDate" : "2025-04-01 16:08:00",
+    "EndDate" : "2025-04-01 16:30:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation553" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation558",
+    "PID" : "177981",
+    "JID" : "3,Line5",
+    "StartDate" : "2025-04-01 16:21:00",
+    "EndDate" : "2025-04-01 16:43:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation556" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation561",
+    "PID" : "177982",
+    "JID" : "4,Line4",
+    "StartDate" : "2025-04-01 16:23:00",
+    "EndDate" : "2025-04-01 16:45:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation559" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation564",
+    "PID" : "177983",
+    "JID" : "5,Line6",
+    "StartDate" : "2025-04-01 16:30:00",
+    "EndDate" : "2025-04-01 16:52:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation562" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation567",
+    "PID" : "177984",
+    "JID" : "6,Line5",
+    "StartDate" : "2025-04-01 16:43:00",
+    "EndDate" : "2025-04-01 17:05:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation565" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation570",
+    "PID" : "177985",
+    "JID" : "7,Line4",
+    "StartDate" : "2025-04-01 16:45:00",
+    "EndDate" : "2025-04-01 17:07:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation568" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation573",
+    "PID" : "177986",
+    "JID" : "8,Line6",
+    "StartDate" : "2025-04-01 16:52:00",
+    "EndDate" : "2025-04-01 17:14:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation571" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation576",
+    "PID" : "177987",
+    "JID" : "9,Line5",
+    "StartDate" : "2025-04-01 17:05:00",
+    "EndDate" : "2025-04-01 17:27:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation574" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation579",
+    "PID" : "177988",
+    "JID" : "10,Line4",
+    "StartDate" : "2025-04-01 17:07:00",
+    "EndDate" : "2025-04-01 17:29:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation577" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation582",
+    "PID" : "177989",
+    "JID" : "11,Line6",
+    "StartDate" : "2025-04-01 17:14:00",
+    "EndDate" : "2025-04-01 17:36:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation580" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation585",
+    "PID" : "177990",
+    "JID" : "12,Line5",
+    "StartDate" : "2025-04-01 17:27:00",
+    "EndDate" : "2025-04-01 17:49:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation583" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation588",
+    "PID" : "177991",
+    "JID" : "13,Line4",
+    "StartDate" : "2025-04-01 17:29:00",
+    "EndDate" : "2025-04-01 17:51:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation586" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation591",
+    "PID" : "177992",
+    "JID" : "14,Line6",
+    "StartDate" : "2025-04-01 17:36:00",
+    "EndDate" : "2025-04-01 17:58:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation589" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation594",
+    "PID" : "177993",
+    "JID" : "15,Line5",
+    "StartDate" : "2025-04-01 17:49:00",
+    "EndDate" : "2025-04-01 18:11:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation592" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation597",
+    "PID" : "177994",
+    "JID" : "16,Line4",
+    "StartDate" : "2025-04-01 17:51:00",
+    "EndDate" : "2025-04-01 18:13:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation595" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation600",
+    "PID" : "177995",
+    "JID" : "17,Line6",
+    "StartDate" : "2025-04-01 17:58:00",
+    "EndDate" : "2025-04-01 18:20:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation598" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation603",
+    "PID" : "177996",
+    "JID" : "18,Line5",
+    "StartDate" : "2025-04-01 18:11:00",
+    "EndDate" : "2025-04-01 18:33:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation601" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation606",
+    "PID" : "177997",
+    "JID" : "19,Line4",
+    "StartDate" : "2025-04-01 18:13:00",
+    "EndDate" : "2025-04-01 18:35:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation604" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation609",
+    "PID" : "177998",
+    "JID" : "20,Line6",
+    "StartDate" : "2025-04-01 18:20:00",
+    "EndDate" : "2025-04-01 18:42:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation607" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation612",
+    "PID" : "177999",
+    "JID" : "21,Line5",
+    "StartDate" : "2025-04-01 18:33:00",
+    "EndDate" : "2025-04-01 18:55:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation610" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation615",
+    "PID" : "178000",
+    "JID" : "22,Line4",
+    "StartDate" : "2025-04-01 18:35:00",
+    "EndDate" : "2025-04-01 18:57:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation613" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation618",
+    "PID" : "178001",
+    "JID" : "23,Line6",
+    "StartDate" : "2025-04-01 18:42:00",
+    "EndDate" : "2025-04-01 19:04:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation616" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation621",
+    "PID" : "178002",
+    "JID" : "24,Line5",
+    "StartDate" : "2025-04-01 18:55:00",
+    "EndDate" : "2025-04-01 19:17:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation619" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation624",
+    "PID" : "178003",
+    "JID" : "25,Line4",
+    "StartDate" : "2025-04-01 18:57:00",
+    "EndDate" : "2025-04-01 19:19:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation622" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation627",
+    "PID" : "178004",
+    "JID" : "26,Line6",
+    "StartDate" : "2025-04-01 19:04:00",
+    "EndDate" : "2025-04-01 19:26:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation625" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation630",
+    "PID" : "178005",
+    "JID" : "27,Line5",
+    "StartDate" : "2025-04-01 19:17:00",
+    "EndDate" : "2025-04-01 19:39:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation628" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation633",
+    "PID" : "178006",
+    "JID" : "28,Line4",
+    "StartDate" : "2025-04-01 19:19:00",
+    "EndDate" : "2025-04-01 19:41:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation631" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation636",
+    "PID" : "178007",
+    "JID" : "29,Line6",
+    "StartDate" : "2025-04-01 19:26:00",
+    "EndDate" : "2025-04-01 19:48:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation634" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation639",
+    "PID" : "178008",
+    "JID" : "30,Line5",
+    "StartDate" : "2025-04-01 19:39:00",
+    "EndDate" : "2025-04-01 20:01:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation637" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation642",
+    "PID" : "178009",
+    "JID" : "31,Line4",
+    "StartDate" : "2025-04-01 19:41:00",
+    "EndDate" : "2025-04-01 20:03:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation640" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation645",
+    "PID" : "178010",
+    "JID" : "32,Line6",
+    "StartDate" : "2025-04-01 19:48:00",
+    "EndDate" : "2025-04-01 20:10:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation643" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation648",
+    "PID" : "178011",
+    "JID" : "33,Line5",
+    "StartDate" : "2025-04-01 20:01:00",
+    "EndDate" : "2025-04-01 20:23:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation646" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation651",
+    "PID" : "178012",
+    "JID" : "34,Line4",
+    "StartDate" : "2025-04-01 20:03:00",
+    "EndDate" : "2025-04-01 20:25:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation649" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation654",
+    "PID" : "178013",
+    "JID" : "35,Line6",
+    "StartDate" : "2025-04-01 20:10:00",
+    "EndDate" : "2025-04-01 20:24:00",
+    "Duration" : 14,
+    "PredAllocationList" : [ "Allocation652" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation657",
+    "PID" : "178014",
+    "JID" : "1,Line5",
+    "StartDate" : "2025-04-01 20:23:00",
+    "EndDate" : "2025-04-01 20:45:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation655" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation660",
+    "PID" : "178015",
+    "JID" : "2,Line6",
+    "StartDate" : "2025-04-01 20:24:00",
+    "EndDate" : "2025-04-01 20:46:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation658" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation663",
+    "PID" : "178016",
+    "JID" : "3,Line4",
+    "StartDate" : "2025-04-01 20:25:00",
+    "EndDate" : "2025-04-01 20:34:00",
+    "Duration" : 9,
+    "PredAllocationList" : [ "Allocation661" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation666",
+    "PID" : "178017",
+    "JID" : "4,Line4",
+    "StartDate" : "2025-04-01 20:34:00",
+    "EndDate" : "2025-04-01 20:56:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation664" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation669",
+    "PID" : "178018",
+    "JID" : "5,Line5",
+    "StartDate" : "2025-04-01 20:45:00",
+    "EndDate" : "2025-04-01 21:07:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation667" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation672",
+    "PID" : "178019",
+    "JID" : "6,Line6",
+    "StartDate" : "2025-04-01 20:46:00",
+    "EndDate" : "2025-04-01 21:08:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation670" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation675",
+    "PID" : "178020",
+    "JID" : "7,Line4",
+    "StartDate" : "2025-04-01 20:56:00",
+    "EndDate" : "2025-04-01 21:18:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation673" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation678",
+    "PID" : "178021",
+    "JID" : "8,Line5",
+    "StartDate" : "2025-04-01 21:07:00",
+    "EndDate" : "2025-04-01 21:29:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation676" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation681",
+    "PID" : "178022",
+    "JID" : "9,Line6",
+    "StartDate" : "2025-04-01 21:08:00",
+    "EndDate" : "2025-04-01 21:30:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation679" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation684",
+    "PID" : "178023",
+    "JID" : "10,Line4",
+    "StartDate" : "2025-04-01 21:18:00",
+    "EndDate" : "2025-04-01 21:40:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation682" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation687",
+    "PID" : "178024",
+    "JID" : "11,Line5",
+    "StartDate" : "2025-04-01 21:29:00",
+    "EndDate" : "2025-04-01 21:51:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation685" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation690",
+    "PID" : "178025",
+    "JID" : "12,Line6",
+    "StartDate" : "2025-04-01 21:30:00",
+    "EndDate" : "2025-04-01 21:52:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation688" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation693",
+    "PID" : "178026",
+    "JID" : "13,Line4",
+    "StartDate" : "2025-04-01 21:40:00",
+    "EndDate" : "2025-04-01 22:02:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation691" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation696",
+    "PID" : "178027",
+    "JID" : "14,Line5",
+    "StartDate" : "2025-04-01 21:51:00",
+    "EndDate" : "2025-04-01 22:13:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation694" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation699",
+    "PID" : "178028",
+    "JID" : "15,Line6",
+    "StartDate" : "2025-04-01 21:52:00",
+    "EndDate" : "2025-04-01 22:14:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation697" ],
+    "ResourceRequirementList" : [ "Line6" ]
+  }, {
+    "ID" : "Allocation702",
+    "PID" : "178029",
+    "JID" : "16,Line4",
+    "StartDate" : "2025-04-01 22:02:00",
+    "EndDate" : "2025-04-01 22:24:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation700" ],
+    "ResourceRequirementList" : [ "Line4" ]
+  }, {
+    "ID" : "Allocation705",
+    "PID" : "178030",
+    "JID" : "17,Line5",
+    "StartDate" : "2025-04-01 22:13:00",
+    "EndDate" : "2025-04-01 22:22:00",
+    "Duration" : 9,
+    "PredAllocationList" : [ "Allocation703" ],
+    "ResourceRequirementList" : [ "Line5" ]
+  }, {
+    "ID" : "Allocation708",
+    "PID" : "178031",
+    "JID" : "1,Line3",
+    "StartDate" : "2025-04-01 15:40:00",
+    "EndDate" : "2025-04-01 16:08:00",
+    "Duration" : 28,
+    "PredAllocationList" : [ "Allocation706" ],
+    "ResourceRequirementList" : [ "Line3" ]
+  }, {
+    "ID" : "Allocation711",
+    "PID" : "178032",
+    "JID" : "2,Line2",
+    "StartDate" : "2025-04-01 15:44:00",
+    "EndDate" : "2025-04-01 15:57:00",
+    "Duration" : 13,
+    "PredAllocationList" : [ "Allocation709" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation714",
+    "PID" : "178033",
+    "JID" : "3,Line1",
+    "StartDate" : "2025-04-01 15:48:00",
+    "EndDate" : "2025-04-01 16:17:00",
+    "Duration" : 29,
+    "PredAllocationList" : [ "Allocation712" ],
+    "ResourceRequirementList" : [ "Line1" ]
+  }, {
+    "ID" : "Allocation717",
+    "PID" : "178034",
+    "JID" : "4,Line2",
+    "StartDate" : "2025-04-01 15:57:00",
+    "EndDate" : "2025-04-01 16:14:00",
+    "Duration" : 17,
+    "PredAllocationList" : [ "Allocation715" ],
+    "ResourceRequirementList" : [ "Line2" ]
+  }, {
+    "ID" : "Allocation720",
+    "PID" : "178036",
+    "JID" : "53,Line3",
+    "StartDate" : "2025-04-01 16:08:00",
+    "EndDate" : "2025-04-01 16:30:00",
+    "Duration" : 22,
+    "PredAllocationList" : [ "Allocation718" ],
+    "ResourceRequirementList" : [ "Line3" ]
   } ],
   "IndicmentsList" : [ {
-    "Allocation" : "120",
+    "Allocation" : "1344",
     "MatchCount" : "1",
     "Constraint" : "Total makespan",
-    "Penalty" : "0hard/0medium/-120soft"
+    "Penalty" : "0hard/0medium/-1344soft"
   }, {
-    "Allocation" : "Allocation-2",
+    "Allocation" : "Allocation-1",
     "MatchCount" : "1",
     "Constraint" : "Total project delay",
-    "Penalty" : "0hard/-60medium/0soft"
+    "Penalty" : "0hard/-26medium/0soft"
   }, {
-    "Allocation" : "Allocation-5",
+    "Allocation" : "Allocation-10",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-19medium/0soft"
+  }, {
+    "Allocation" : "Allocation-100",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-176medium/0soft"
+  }, {
+    "Allocation" : "Allocation-103",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-181medium/0soft"
+  }, {
+    "Allocation" : "Allocation-106",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-184medium/0soft"
+  }, {
+    "Allocation" : "Allocation-109",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-188medium/0soft"
+  }, {
+    "Allocation" : "Allocation-112",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-190medium/0soft"
+  }, {
+    "Allocation" : "Allocation-115",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-192medium/0soft"
+  }, {
+    "Allocation" : "Allocation-118",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-202medium/0soft"
+  }, {
+    "Allocation" : "Allocation-121",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-210medium/0soft"
+  }, {
+    "Allocation" : "Allocation-124",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-210medium/0soft"
+  }, {
+    "Allocation" : "Allocation-127",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-214medium/0soft"
+  }, {
+    "Allocation" : "Allocation-13",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-45medium/0soft"
+  }, {
+    "Allocation" : "Allocation-130",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-219medium/0soft"
+  }, {
+    "Allocation" : "Allocation-133",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-220medium/0soft"
+  }, {
+    "Allocation" : "Allocation-136",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-228medium/0soft"
+  }, {
+    "Allocation" : "Allocation-139",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-236medium/0soft"
+  }, {
+    "Allocation" : "Allocation-142",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-239medium/0soft"
+  }, {
+    "Allocation" : "Allocation-145",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-240medium/0soft"
+  }, {
+    "Allocation" : "Allocation-148",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-248medium/0soft"
+  }, {
+    "Allocation" : "Allocation-151",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-248medium/0soft"
+  }, {
+    "Allocation" : "Allocation-154",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-254medium/0soft"
+  }, {
+    "Allocation" : "Allocation-157",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-262medium/0soft"
+  }, {
+    "Allocation" : "Allocation-16",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-46medium/0soft"
+  }, {
+    "Allocation" : "Allocation-160",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-266medium/0soft"
+  }, {
+    "Allocation" : "Allocation-163",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-248medium/0soft"
+  }, {
+    "Allocation" : "Allocation-166",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-276medium/0soft"
+  }, {
+    "Allocation" : "Allocation-169",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-277medium/0soft"
+  }, {
+    "Allocation" : "Allocation-172",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-277medium/0soft"
+  }, {
+    "Allocation" : "Allocation-175",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-280medium/0soft"
+  }, {
+    "Allocation" : "Allocation-178",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-288medium/0soft"
+  }, {
+    "Allocation" : "Allocation-181",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-292medium/0soft"
+  }, {
+    "Allocation" : "Allocation-184",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-304medium/0soft"
+  }, {
+    "Allocation" : "Allocation-187",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-306medium/0soft"
+  }, {
+    "Allocation" : "Allocation-19",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-52medium/0soft"
+  }, {
+    "Allocation" : "Allocation-190",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-306medium/0soft"
+  }, {
+    "Allocation" : "Allocation-193",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-306medium/0soft"
+  }, {
+    "Allocation" : "Allocation-196",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-294medium/0soft"
+  }, {
+    "Allocation" : "Allocation-199",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-327medium/0soft"
+  }, {
+    "Allocation" : "Allocation-202",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-331medium/0soft"
+  }, {
+    "Allocation" : "Allocation-205",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-352medium/0soft"
+  }, {
+    "Allocation" : "Allocation-208",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-373medium/0soft"
+  }, {
+    "Allocation" : "Allocation-211",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-394medium/0soft"
+  }, {
+    "Allocation" : "Allocation-214",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-415medium/0soft"
+  }, {
+    "Allocation" : "Allocation-217",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-436medium/0soft"
+  }, {
+    "Allocation" : "Allocation-22",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-54medium/0soft"
+  }, {
+    "Allocation" : "Allocation-220",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-457medium/0soft"
+  }, {
+    "Allocation" : "Allocation-223",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-478medium/0soft"
+  }, {
+    "Allocation" : "Allocation-226",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-499medium/0soft"
+  }, {
+    "Allocation" : "Allocation-229",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-520medium/0soft"
+  }, {
+    "Allocation" : "Allocation-232",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-524medium/0soft"
+  }, {
+    "Allocation" : "Allocation-235",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-536medium/0soft"
+  }, {
+    "Allocation" : "Allocation-238",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-557medium/0soft"
+  }, {
+    "Allocation" : "Allocation-241",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-578medium/0soft"
+  }, {
+    "Allocation" : "Allocation-244",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-599medium/0soft"
+  }, {
+    "Allocation" : "Allocation-247",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-620medium/0soft"
+  }, {
+    "Allocation" : "Allocation-25",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-58medium/0soft"
+  }, {
+    "Allocation" : "Allocation-250",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-641medium/0soft"
+  }, {
+    "Allocation" : "Allocation-253",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-662medium/0soft"
+  }, {
+    "Allocation" : "Allocation-256",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-683medium/0soft"
+  }, {
+    "Allocation" : "Allocation-259",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-704medium/0soft"
+  }, {
+    "Allocation" : "Allocation-262",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-725medium/0soft"
+  }, {
+    "Allocation" : "Allocation-265",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-746medium/0soft"
+  }, {
+    "Allocation" : "Allocation-268",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-767medium/0soft"
+  }, {
+    "Allocation" : "Allocation-271",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-788medium/0soft"
+  }, {
+    "Allocation" : "Allocation-274",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-809medium/0soft"
+  }, {
+    "Allocation" : "Allocation-277",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-830medium/0soft"
+  }, {
+    "Allocation" : "Allocation-28",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-65medium/0soft"
+  }, {
+    "Allocation" : "Allocation-280",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-845medium/0soft"
+  }, {
+    "Allocation" : "Allocation-283",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-402medium/0soft"
+  }, {
+    "Allocation" : "Allocation-286",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-406medium/0soft"
+  }, {
+    "Allocation" : "Allocation-289",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-410medium/0soft"
+  }, {
+    "Allocation" : "Allocation-292",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-416medium/0soft"
+  }, {
+    "Allocation" : "Allocation-295",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-421medium/0soft"
+  }, {
+    "Allocation" : "Allocation-298",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-428medium/0soft"
+  }, {
+    "Allocation" : "Allocation-301",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-432medium/0soft"
+  }, {
+    "Allocation" : "Allocation-304",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-436medium/0soft"
+  }, {
+    "Allocation" : "Allocation-307",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-444medium/0soft"
+  }, {
+    "Allocation" : "Allocation-31",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-72medium/0soft"
+  }, {
+    "Allocation" : "Allocation-310",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-450medium/0soft"
+  }, {
+    "Allocation" : "Allocation-313",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-454medium/0soft"
+  }, {
+    "Allocation" : "Allocation-316",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-458medium/0soft"
+  }, {
+    "Allocation" : "Allocation-319",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-462medium/0soft"
+  }, {
+    "Allocation" : "Allocation-322",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-472medium/0soft"
+  }, {
+    "Allocation" : "Allocation-325",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-463medium/0soft"
+  }, {
+    "Allocation" : "Allocation-328",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-480medium/0soft"
+  }, {
+    "Allocation" : "Allocation-331",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-484medium/0soft"
+  }, {
+    "Allocation" : "Allocation-334",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-488medium/0soft"
+  }, {
+    "Allocation" : "Allocation-337",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-492medium/0soft"
+  }, {
+    "Allocation" : "Allocation-34",
     "MatchCount" : "1",
     "Constraint" : "Total project delay",
     "Penalty" : "0hard/-74medium/0soft"
   }, {
-    "Allocation" : "Allocation-8",
+    "Allocation" : "Allocation-340",
     "MatchCount" : "1",
     "Constraint" : "Total project delay",
-    "Penalty" : "0hard/-120medium/0soft"
+    "Penalty" : "0hard/-500medium/0soft"
+  }, {
+    "Allocation" : "Allocation-343",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-506medium/0soft"
+  }, {
+    "Allocation" : "Allocation-346",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-487medium/0soft"
+  }, {
+    "Allocation" : "Allocation-349",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-509medium/0soft"
+  }, {
+    "Allocation" : "Allocation-352",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-510medium/0soft"
+  }, {
+    "Allocation" : "Allocation-355",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-528medium/0soft"
+  }, {
+    "Allocation" : "Allocation-358",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-519medium/0soft"
+  }, {
+    "Allocation" : "Allocation-361",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-532medium/0soft"
+  }, {
+    "Allocation" : "Allocation-364",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-541medium/0soft"
+  }, {
+    "Allocation" : "Allocation-367",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-550medium/0soft"
+  }, {
+    "Allocation" : "Allocation-37",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-80medium/0soft"
+  }, {
+    "Allocation" : "Allocation-370",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-554medium/0soft"
+  }, {
+    "Allocation" : "Allocation-373",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-563medium/0soft"
+  }, {
+    "Allocation" : "Allocation-376",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-572medium/0soft"
+  }, {
+    "Allocation" : "Allocation-379",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-576medium/0soft"
+  }, {
+    "Allocation" : "Allocation-382",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-585medium/0soft"
+  }, {
+    "Allocation" : "Allocation-385",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-594medium/0soft"
+  }, {
+    "Allocation" : "Allocation-388",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-598medium/0soft"
+  }, {
+    "Allocation" : "Allocation-391",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-607medium/0soft"
+  }, {
+    "Allocation" : "Allocation-394",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-616medium/0soft"
+  }, {
+    "Allocation" : "Allocation-397",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-607medium/0soft"
+  }, {
+    "Allocation" : "Allocation-4",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-30medium/0soft"
+  }, {
+    "Allocation" : "Allocation-40",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-80medium/0soft"
+  }, {
+    "Allocation" : "Allocation-400",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-629medium/0soft"
+  }, {
+    "Allocation" : "Allocation-403",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-629medium/0soft"
+  }, {
+    "Allocation" : "Allocation-406",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-638medium/0soft"
+  }, {
+    "Allocation" : "Allocation-409",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-651medium/0soft"
+  }, {
+    "Allocation" : "Allocation-412",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-651medium/0soft"
+  }, {
+    "Allocation" : "Allocation-415",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-660medium/0soft"
+  }, {
+    "Allocation" : "Allocation-418",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-673medium/0soft"
+  }, {
+    "Allocation" : "Allocation-421",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-673medium/0soft"
+  }, {
+    "Allocation" : "Allocation-424",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-682medium/0soft"
+  }, {
+    "Allocation" : "Allocation-427",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-695medium/0soft"
+  }, {
+    "Allocation" : "Allocation-43",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-84medium/0soft"
+  }, {
+    "Allocation" : "Allocation-430",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-695medium/0soft"
+  }, {
+    "Allocation" : "Allocation-433",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-704medium/0soft"
+  }, {
+    "Allocation" : "Allocation-436",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-717medium/0soft"
+  }, {
+    "Allocation" : "Allocation-439",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-717medium/0soft"
+  }, {
+    "Allocation" : "Allocation-442",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-726medium/0soft"
+  }, {
+    "Allocation" : "Allocation-445",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-739medium/0soft"
+  }, {
+    "Allocation" : "Allocation-448",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-739medium/0soft"
+  }, {
+    "Allocation" : "Allocation-451",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-741medium/0soft"
+  }, {
+    "Allocation" : "Allocation-454",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-761medium/0soft"
+  }, {
+    "Allocation" : "Allocation-457",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-761medium/0soft"
+  }, {
+    "Allocation" : "Allocation-46",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-94medium/0soft"
+  }, {
+    "Allocation" : "Allocation-460",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-763medium/0soft"
+  }, {
+    "Allocation" : "Allocation-463",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-783medium/0soft"
+  }, {
+    "Allocation" : "Allocation-466",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-783medium/0soft"
+  }, {
+    "Allocation" : "Allocation-469",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-785medium/0soft"
+  }, {
+    "Allocation" : "Allocation-472",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-805medium/0soft"
+  }, {
+    "Allocation" : "Allocation-475",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-805medium/0soft"
+  }, {
+    "Allocation" : "Allocation-478",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-807medium/0soft"
+  }, {
+    "Allocation" : "Allocation-481",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-827medium/0soft"
+  }, {
+    "Allocation" : "Allocation-484",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-827medium/0soft"
+  }, {
+    "Allocation" : "Allocation-487",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-829medium/0soft"
+  }, {
+    "Allocation" : "Allocation-49",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-98medium/0soft"
+  }, {
+    "Allocation" : "Allocation-490",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-849medium/0soft"
+  }, {
+    "Allocation" : "Allocation-493",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-849medium/0soft"
+  }, {
+    "Allocation" : "Allocation-496",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-851medium/0soft"
+  }, {
+    "Allocation" : "Allocation-499",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-871medium/0soft"
+  }, {
+    "Allocation" : "Allocation-502",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-871medium/0soft"
+  }, {
+    "Allocation" : "Allocation-505",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-873medium/0soft"
+  }, {
+    "Allocation" : "Allocation-508",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-893medium/0soft"
+  }, {
+    "Allocation" : "Allocation-511",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-893medium/0soft"
+  }, {
+    "Allocation" : "Allocation-514",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-895medium/0soft"
+  }, {
+    "Allocation" : "Allocation-517",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-915medium/0soft"
+  }, {
+    "Allocation" : "Allocation-52",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-103medium/0soft"
+  }, {
+    "Allocation" : "Allocation-520",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-915medium/0soft"
+  }, {
+    "Allocation" : "Allocation-523",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-917medium/0soft"
+  }, {
+    "Allocation" : "Allocation-526",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-937medium/0soft"
+  }, {
+    "Allocation" : "Allocation-529",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-937medium/0soft"
+  }, {
+    "Allocation" : "Allocation-532",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-939medium/0soft"
+  }, {
+    "Allocation" : "Allocation-535",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-959medium/0soft"
+  }, {
+    "Allocation" : "Allocation-538",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-959medium/0soft"
+  }, {
+    "Allocation" : "Allocation-541",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-961medium/0soft"
+  }, {
+    "Allocation" : "Allocation-544",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-981medium/0soft"
+  }, {
+    "Allocation" : "Allocation-547",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-968medium/0soft"
+  }, {
+    "Allocation" : "Allocation-55",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-106medium/0soft"
+  }, {
+    "Allocation" : "Allocation-550",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-983medium/0soft"
+  }, {
+    "Allocation" : "Allocation-553",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-990medium/0soft"
+  }, {
+    "Allocation" : "Allocation-556",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1003medium/0soft"
+  }, {
+    "Allocation" : "Allocation-559",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1005medium/0soft"
+  }, {
+    "Allocation" : "Allocation-562",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1012medium/0soft"
+  }, {
+    "Allocation" : "Allocation-565",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1025medium/0soft"
+  }, {
+    "Allocation" : "Allocation-568",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1027medium/0soft"
+  }, {
+    "Allocation" : "Allocation-571",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1034medium/0soft"
+  }, {
+    "Allocation" : "Allocation-574",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1047medium/0soft"
+  }, {
+    "Allocation" : "Allocation-577",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1049medium/0soft"
+  }, {
+    "Allocation" : "Allocation-58",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-108medium/0soft"
+  }, {
+    "Allocation" : "Allocation-580",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1056medium/0soft"
+  }, {
+    "Allocation" : "Allocation-583",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1069medium/0soft"
+  }, {
+    "Allocation" : "Allocation-586",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1071medium/0soft"
+  }, {
+    "Allocation" : "Allocation-589",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1078medium/0soft"
+  }, {
+    "Allocation" : "Allocation-592",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1091medium/0soft"
+  }, {
+    "Allocation" : "Allocation-595",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1093medium/0soft"
+  }, {
+    "Allocation" : "Allocation-598",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1100medium/0soft"
+  }, {
+    "Allocation" : "Allocation-601",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1113medium/0soft"
+  }, {
+    "Allocation" : "Allocation-604",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1115medium/0soft"
+  }, {
+    "Allocation" : "Allocation-607",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1122medium/0soft"
+  }, {
+    "Allocation" : "Allocation-61",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-110medium/0soft"
+  }, {
+    "Allocation" : "Allocation-610",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1135medium/0soft"
+  }, {
+    "Allocation" : "Allocation-613",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1137medium/0soft"
+  }, {
+    "Allocation" : "Allocation-616",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1144medium/0soft"
+  }, {
+    "Allocation" : "Allocation-619",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1157medium/0soft"
+  }, {
+    "Allocation" : "Allocation-622",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1159medium/0soft"
+  }, {
+    "Allocation" : "Allocation-625",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1166medium/0soft"
+  }, {
+    "Allocation" : "Allocation-628",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1179medium/0soft"
+  }, {
+    "Allocation" : "Allocation-631",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1181medium/0soft"
+  }, {
+    "Allocation" : "Allocation-634",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1188medium/0soft"
+  }, {
+    "Allocation" : "Allocation-637",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1201medium/0soft"
+  }, {
+    "Allocation" : "Allocation-64",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-123medium/0soft"
+  }, {
+    "Allocation" : "Allocation-640",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1203medium/0soft"
+  }, {
+    "Allocation" : "Allocation-643",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1210medium/0soft"
+  }, {
+    "Allocation" : "Allocation-646",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1223medium/0soft"
+  }, {
+    "Allocation" : "Allocation-649",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1225medium/0soft"
+  }, {
+    "Allocation" : "Allocation-652",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1224medium/0soft"
+  }, {
+    "Allocation" : "Allocation-655",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1245medium/0soft"
+  }, {
+    "Allocation" : "Allocation-658",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1246medium/0soft"
+  }, {
+    "Allocation" : "Allocation-661",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1234medium/0soft"
+  }, {
+    "Allocation" : "Allocation-664",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1256medium/0soft"
+  }, {
+    "Allocation" : "Allocation-667",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1267medium/0soft"
+  }, {
+    "Allocation" : "Allocation-67",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-124medium/0soft"
+  }, {
+    "Allocation" : "Allocation-670",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1268medium/0soft"
+  }, {
+    "Allocation" : "Allocation-673",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1278medium/0soft"
+  }, {
+    "Allocation" : "Allocation-676",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1289medium/0soft"
+  }, {
+    "Allocation" : "Allocation-679",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1290medium/0soft"
+  }, {
+    "Allocation" : "Allocation-682",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1300medium/0soft"
+  }, {
+    "Allocation" : "Allocation-685",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1311medium/0soft"
+  }, {
+    "Allocation" : "Allocation-688",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1312medium/0soft"
+  }, {
+    "Allocation" : "Allocation-691",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1322medium/0soft"
+  }, {
+    "Allocation" : "Allocation-694",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1333medium/0soft"
+  }, {
+    "Allocation" : "Allocation-697",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1334medium/0soft"
+  }, {
+    "Allocation" : "Allocation-7",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-17medium/0soft"
+  }, {
+    "Allocation" : "Allocation-70",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-132medium/0soft"
+  }, {
+    "Allocation" : "Allocation-700",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1344medium/0soft"
+  }, {
+    "Allocation" : "Allocation-703",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-1342medium/0soft"
+  }, {
+    "Allocation" : "Allocation-706",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-968medium/0soft"
+  }, {
+    "Allocation" : "Allocation-709",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-957medium/0soft"
+  }, {
+    "Allocation" : "Allocation-712",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-977medium/0soft"
+  }, {
+    "Allocation" : "Allocation-715",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-974medium/0soft"
+  }, {
+    "Allocation" : "Allocation-718",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-990medium/0soft"
+  }, {
+    "Allocation" : "Allocation-73",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-132medium/0soft"
+  }, {
+    "Allocation" : "Allocation-76",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-136medium/0soft"
+  }, {
+    "Allocation" : "Allocation-79",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-136medium/0soft"
+  }, {
+    "Allocation" : "Allocation-82",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-150medium/0soft"
+  }, {
+    "Allocation" : "Allocation-85",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-152medium/0soft"
+  }, {
+    "Allocation" : "Allocation-88",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-158medium/0soft"
+  }, {
+    "Allocation" : "Allocation-91",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-161medium/0soft"
+  }, {
+    "Allocation" : "Allocation-94",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-162medium/0soft"
+  }, {
+    "Allocation" : "Allocation-97",
+    "MatchCount" : "1",
+    "Constraint" : "Total project delay",
+    "Penalty" : "0hard/-164medium/0soft"
   } ],
   "TotalMatch" : {
     "initScore" : 0,
     "hardScore" : 0,
-    "mediumScore" : -254,
-    "softScore" : -120,
+    "mediumScore" : -152740,
+    "softScore" : -1344,
     "feasible" : true,
     "zero" : false,
     "solutionInitialized" : true

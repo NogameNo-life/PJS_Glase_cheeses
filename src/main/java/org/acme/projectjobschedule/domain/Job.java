@@ -13,7 +13,6 @@ public class Job {
     private String id;
     private Project project;
     private JobType jobType;
-    private int duration;
     private List<ExecutionMode> executionModes;
     @JsonIdentityReference(alwaysAsId = true)
     private List<Job> successorJobs;
@@ -53,7 +52,6 @@ public class Job {
     public Project getProject() {
         return project;
     }
-    public int getDuration(){ return duration;}
 
     public void setProject(Project project) {
         this.project = project;

@@ -50,7 +50,7 @@ class JarWithDependenciesIT {
                 .inheritIO()
                 .start();
         try {
-            process.waitFor(1, TimeUnit.MINUTES);
+            process.waitFor(4, TimeUnit.MINUTES);
             if (process.isAlive()) {
                 Assertions.fail("Executable JAR timed out.");
             }

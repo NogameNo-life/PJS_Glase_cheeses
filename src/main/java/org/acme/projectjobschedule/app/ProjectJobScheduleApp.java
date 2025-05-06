@@ -1,6 +1,8 @@
 package org.acme.projectjobschedule.app;
 
-import java.io.File;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import java.time.Duration;
@@ -19,21 +21,19 @@ import ai.timefold.solver.core.api.solver.Solver;
 
 import ai.timefold.solver.core.config.solver.SolverConfig;
 import ai.timefold.solver.core.config.solver.termination.TerminationConfig;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.nio.file.*;
 
 public class ProjectJobScheduleApp {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ProjectJobScheduleApp.class);
-
     public static void main(String[] args) {
 
-        // Load the problem from JSON
-        String filePath = "src/main/resources/importData.json"; // Путь к файлу JSON
+        if(args.length!=0) {
+            // Load the problem from JSON
+            ImportFileCreator importFileCreator = new ImportFileCreator(args[0]);
+            String importFilePath = "src/main/resources/importFiles/" + args[0] + "Import.json";
+            importFileCreator.convertToJsonFile(importFilePath);
 
-        File importFile = new File(filePath);
-        if(importFile.exists()) {
-            DataModel model = new DataModel(filePath);
+            DataModel model = new DataModel(importFilePath);
             model.readOperationHashMap();
             ProjectJobSchedule problem = model.generateProjectJobSchedule();
             SolverFactory<ProjectJobSchedule> solverFactory = SolverFactory.create(new SolverConfig()
@@ -57,16 +57,29 @@ public class ProjectJobScheduleApp {
 
             List<Allocation> allocations = solution.getAllocations();
 
-            JsonExporter exporter = new JsonExporter(score, model.getID(), model.getStartDate(),
-                    problem.getProjects(), problem.getResources(), problem.getResourceRequirements(),
-                    allocations, scoreExplanation);
-            exporter.convertToJsonFile("src/main/resources/exportData.json");
-        }
+            JsonExporter exporter = new JsonExporter(score, model.getID(), problem.getProjects(),
+                    problem.getResources(), problem.getResourceRequirements(), allocations, scoreExplanation);
 
+            String exportFileDefaultPath = "src/main/resources/exportFiles/" + args[0] + "Export.json";
+            if (args.length > 1) {
+                try {
+                    Path customExportPath = Paths.get(args[1]);
+                    Files.createDirectories(customExportPath.getParent()); // создаёт все нужные директории
+                    exporter.convertToJsonFile(String.valueOf(customExportPath));
+                } catch (IOException e) {
+                    System.err.println("Ошибка записи: " + e.getMessage());
+                    exporter.convertToJsonFile(exportFileDefaultPath);
+                }
+            }
+
+            else {
+                exporter.convertToJsonFile(exportFileDefaultPath);
+            }
+        }
         else {
-            LOGGER.info("Import file not found in directory src/main/resources/ !");
+            System.out.println("Import file not found in directory src/main/resources/ !");
         }
     }
     }
-
+    
 

@@ -25,13 +25,13 @@ public class JsonExporter {
 
     private final Map<String, Object> jsonMap;
     private HardMediumSoftScore totalScore;
-
-    public JsonExporter(HardMediumSoftScore score, String ID, LocalDateTime StartDate, List<Project> projects, List<Resource> resources,
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    public JsonExporter(HardMediumSoftScore score, String ID,  List<Project> projects, List<Resource> resources,
                         List<ResourceRequirement> requirementList, List<Allocation> allocations, ScoreExplanation<ProjectJobSchedule, HardMediumSoftScore> scoreExplanation) {
 
-        List<String> projectsNP= getProjectsNP(projects);
+        List<String> projectsPid= getProjectsPid(projects);
         List<String> resourcesRid = getResourcesRid(resources);
-        List<JsonAllocationList> jallocationList = getJallocationList(allocations, StartDate, requirementList);
+        List<JsonAllocationList> jallocationList = getJallocationList(allocations, requirementList);
         List<ResultAnalyze> Indicments = getIndicmentList(scoreExplanation);
         this.jsonMap = new LinkedHashMap<>();
 
@@ -39,7 +39,7 @@ public class JsonExporter {
         jsonMap.put("HardConstraintsPenalty", score.hardScore());
         jsonMap.put("MediumConstraintsPenalty1", score.mediumScore());
         jsonMap.put("SoftConstraintsPenalty", score.softScore());
-        jsonMap.put("Projects", projectsNP);
+        jsonMap.put("Projects", projectsPid);
         jsonMap.put("Resources", resourcesRid);
         jsonMap.put("AllocationList", jallocationList);
         jsonMap.put("IndicmentsList", Indicments);
@@ -48,12 +48,19 @@ public class JsonExporter {
 
     public void convertToJsonFile(String filePath) {
         ObjectMapper objectMapper = new ObjectMapper();
-        // objectMapper.configure(MapperFeature.SORT_PROPERTIES_ALPHABETICALLY, false);
+        File file = new File(filePath);
+
         try {
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(filePath), jsonMap);
+            // Создаем все необходимые родительские директории
+            File parentDir = file.getParentFile();
+            if (parentDir != null && !parentDir.exists()) {
+                parentDir.mkdirs();
+            }
+
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, jsonMap);
             System.out.println("JSON файл успешно создан: " + filePath);
         } catch (IOException e) {
-            System.err.println("Ошибка при создании JSON файла:" + e.getMessage());
+            System.err.println("Ошибка при создании JSON файла: " + e.getMessage());
         }
     }
 
@@ -64,15 +71,15 @@ public class JsonExporter {
         }
          return resourcesRid;
     }
-    private List<String> getProjectsNP(List<Project> projects){
-        List<String> projectsNP = new ArrayList<>();
+    private List<String> getProjectsPid(List<Project> projects){
+        List<String> projectsPid = new ArrayList<>();
         for (Project project : projects) {
-            projectsNP.add(String.valueOf(project.getNp()));
+            projectsPid.add(String.valueOf(project.getPID()));
         }
-        return projectsNP;
+        return projectsPid;
     }
 
-    private List<JsonAllocationList> getJallocationList(List<Allocation> allocations, LocalDateTime StartDate,
+    private List<JsonAllocationList> getJallocationList(List<Allocation> allocations,
                                                         List<ResourceRequirement> requirementList ){
         List<JsonAllocationList> jallocationList = new ArrayList<>();
         for (Allocation allocation : allocations) {
@@ -80,8 +87,9 @@ public class JsonExporter {
                 continue;
             }
             JsonAllocationList jallocation = new JsonAllocationList(allocation.getId(), allocation.getProject().getPID(),
-                    allocation.getExecutionMode().getJID(), StartDate, allocation.getStartDate(), allocation.getExecutionMode().getDuration(), requirementList,
-                    allocation.getExecutionMode(), allocation.getPredecessorAllocations());
+                    allocation.getExecutionMode().getJID(), String.valueOf(allocation.getStartDateTime().format(formatter)),
+                    String.valueOf(allocation.getEndDateTime().format(formatter)),  allocation.getExecutionMode().getDuration(),
+                    requirementList, allocation.getExecutionMode(), allocation.getPredecessorAllocations());
             jallocationList.add(jallocation);
         }
         return jallocationList;
@@ -116,8 +124,6 @@ public class JsonExporter {
 
     static class JsonAllocationList{
 
-        // Формат даты и времени
-        private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         private final String id;
         private final String pid;
         private final String jid;
@@ -145,7 +151,7 @@ public class JsonExporter {
 
         @JsonProperty("StartDate")
         public String getStartDate() {
-            return startDate;
+            return  startDate;
         }
 
         @JsonProperty("EndDate")
@@ -168,7 +174,7 @@ public class JsonExporter {
             return predAllocationList;
         }
 
-        public JsonAllocationList(String id, String pid, String jid, LocalDateTime startDate, int allocStartDate,
+        public JsonAllocationList(String id, String pid, String jid, String startDate, String endDate,
                               int duration, List<ResourceRequirement> requirementsList,
                               ExecutionMode executionMode,
                               List<Allocation> predAllocationlist){
@@ -176,8 +182,8 @@ public class JsonExporter {
             this.id = "Allocation" + numericId;
             this.pid = pid;
             this.jid = jid;
-            this.startDate = startDate.plusMinutes(allocStartDate).format(formatter);
-            this.endDate = startDate.plusMinutes(allocStartDate + duration).format(formatter);
+            this.startDate = startDate;
+            this.endDate = endDate;
             this.duration = duration;
             this.resourceRequirementList = new ArrayList<>();
             this.predAllocationList = new ArrayList<>();

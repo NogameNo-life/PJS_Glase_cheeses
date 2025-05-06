@@ -1,5 +1,7 @@
 package org.acme.projectjobschedule.domain;
 
+import java.time.Duration;
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -55,6 +57,8 @@ public class Allocation {
     // Filled from shadow variables
     private Integer startDate;
     private Integer endDate;
+    private LocalDateTime startDateTime;
+    private LocalDateTime endDateTime;
     private List<Integer> busyDates;
 
     public Allocation() {
@@ -187,6 +191,24 @@ public class Allocation {
             endDate = getStartDate() + (executionMode == null ? 0 : executionMode.getDuration());
         }
         return endDate;
+    }
+
+    public LocalDateTime getStartDateTime(){
+        Duration startDuration = Duration.ofMinutes(getStartDate());
+        return startDateTime.plus(startDuration);
+    }
+
+    public LocalDateTime getEndDateTime(){
+        Duration endDuration = Duration.ofMinutes(getEndDate());
+        return endDateTime.plus(endDuration);
+    }
+
+    public void setStartDateTime(LocalDateTime startDateTime){
+        this.startDateTime = startDateTime;
+    }
+
+    public void setEndDateTime(LocalDateTime endDateTime){
+        this.endDateTime = endDateTime;
     }
 
     @JsonIgnore

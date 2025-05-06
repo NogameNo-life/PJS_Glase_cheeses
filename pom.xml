@@ -15,7 +15,7 @@
         <version.ai.timefold.solver>1.15.0</version.ai.timefold.solver>
         <version.org.assertj>3.26.3</version.org.assertj>
         <version.org.junit.jupiter>5.11.2</version.org.junit.jupiter>
-        <version.ch.qos.logback>1.5.8</version.ch.qos.logback>
+        <version.ch.qos.logback>1.5.18</version.ch.qos.logback>
 
         <version.compiler.plugin>3.13.0</version.compiler.plugin>
         <version.surefire.plugin>3.5.1</version.surefire.plugin>
@@ -37,11 +37,6 @@
         <version>${version.org.junit.jupiter}</version>
         <type>pom</type>
         <scope>import</scope>
-    </dependency>
-    <dependency>
-        <groupId>ch.qos.logback</groupId>
-        <artifactId>logback-classic</artifactId>
-        <version>${version.ch.qos.logback}</version>
     </dependency>
     <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
@@ -66,11 +61,6 @@
         <groupId>ai.timefold.solver</groupId>
         <artifactId>timefold-solver-benchmark</artifactId>
     </dependency>
-<dependency>
-    <groupId>ch.qos.logback</groupId>
-    <artifactId>logback-classic</artifactId>
-    <scope>runtime</scope>
-</dependency>
     <!-- JSON -->
     <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
@@ -87,12 +77,21 @@
         <artifactId>jackson-databind</artifactId>
         <version>2.15.0</version>
     </dependency>
-
+    <dependency>
+        <groupId>com.microsoft.sqlserver</groupId>
+        <artifactId>mssql-jdbc</artifactId>
+        <version> 12.8.1.jre11</version>
+    </dependency>
     <!-- Testing -->
     <dependency>
         <groupId>ai.timefold.solver</groupId>
         <artifactId>timefold-solver-test</artifactId>
         <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${version.ch.qos.logback}</version>
     </dependency>
     <dependency>
         <groupId>org.skyscreamer</groupId>
@@ -170,4 +169,4 @@
     </plugin>
 </plugins>
 </build>
-        </project>
+</project>
